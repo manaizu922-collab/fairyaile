@@ -1,64 +1,77 @@
-
 <!DOCTYPE html>
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="fairyaileは、大学受験で合理的配慮を求める受験生の情報整理や書類準備の負担を減らすことを目指しています。">
+  <meta name="description" content="fairyaileは、大学受験における合理的配慮の情報整理や書類準備を支援し、一人ひとりが自分の未来を選べる社会を目指します。">
+  <meta name="theme-color" content="#f47735">
   <title>fairyaile｜可能性を、ひらく。</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
+  <!-- HEADER -->
   <header class="header">
     <a href="#top" class="logo">fairyaile<span>.</span></a>
 
-    <button class="menu-toggle" aria-label="メニューを開く"
-      aria-expanded="false">
-      <span></span><span></span>
+    <button class="menu-toggle"
+      aria-label="メニューを開く"
+      aria-expanded="false"
+      aria-controls="global-nav">
+      <span></span>
+      <span></span>
     </button>
 
-    <nav class="nav">
+    <nav class="nav" id="global-nav">
       <a href="#about">ABOUT</a>
-      <a href="#business">BUSINESS</a>
-      <a href="#message">MESSAGE</a>
+      <a href="#service">SERVICE</a>
       <a href="#vision">VISION</a>
-      <a href="#contact" class="nav-contact">CONTACT <span>↗</span></a>
+      <a href="#achievements">ACHIEVEMENTS</a>
+      <a href="#team">TEAM</a>
+      <a href="#contact" class="nav-contact">CONTACT ↗</a>
     </nav>
   </header>
 
   <main>
+
+    <!-- HERO -->
     <section class="hero" id="top">
+      <div class="hero-overlay"></div>
+
       <div class="hero-content">
-        <p class="eyebrow"><span></span> POSSIBILITY FOR EVERYONE</p>
-
-        <h1>可能性を、<br><span>ひらく。</span></h1>
-
-        <p class="hero-description">
-          環境や制度の壁によって、<br>
-          一人ひとりの未来が狭まらない社会へ。
+        <p class="eyebrow">
+          <span></span>
+          POSSIBILITY FOR EVERYONE
         </p>
 
-        <a href="#about" class="primary-button">
-          私たちについて知る <span>→</span>
-        </a>
+        <h1>
+          可能性を、<br>
+          <span>ひらく。</span>
+        </h1>
 
-        <p class="hero-note">小さな気づきから、社会を変える一歩へ。</p>
-      </div>
+        <p class="hero-lead">
+          大学受験における合理的配慮の<br class="pc-only">
+          情報整理・書類準備を支援する。
+        </p>
 
-      <div class="hero-visual" aria-label="可能性が広がることを表現したグラフィック">
-        <div class="visual-circle circle-back"></div>
-        <div class="visual-circle circle-front"></div>
-        <div class="visual-card card-one">
-          <span class="mini-label">YOUR FUTURE</span>
-          <strong>選択肢は、<br>もっと広がる。</strong>
-          <span class="card-arrow">↗</span>
+        <p class="hero-description">
+          必要な情報に出会い、自分らしい進路を選べる社会へ。
+          私たちは、受験における情報や準備の壁に向き合います。
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#service" class="primary-button">
+            事業内容を見る <span>→</span>
+          </a>
+          <a href="#contact" class="secondary-button">
+            協力・お問い合わせ <span>↗</span>
+          </a>
         </div>
-        <div class="visual-card card-two">
-          <span class="small-dot"></span>
-          <span>ひとりひとりに、<br>自分らしい選択を。</span>
-        </div>
-        <div class="visual-number">01</div>
+
+        <p class="hero-note">
+          小さな気づきから、社会を変える一歩へ。
+        </p>
       </div>
 
       <div class="hero-bottom">
@@ -67,157 +80,398 @@
       </div>
     </section>
 
+
+    <!-- ABOUT -->
     <section class="section about" id="about">
-      <div class="section-heading">
+      <div class="section-topline">
         <p class="section-label">01 / ABOUT US</p>
-        <h2>情報の壁をなくし、<br>選べる未来を増やす。</h2>
+        <span class="section-index">WHO WE ARE</span>
       </div>
 
-      <div class="about-content">
-        <p class="lead">
-          知らないことで、諦めてしまう選択肢がある。
-        </p>
-        <p>
-          大学受験では、必要な情報を集めたり、合理的配慮に関する
-          書類を準備したりすることが、大きな負担になる場合があります。
-          私たちは、その負担を少しでも減らし、一人ひとりが自分の進路を
-          考えられる環境づくりを目指しています。
-        </p>
-        <a href="#business" class="text-link">私たちの事業を見る <span>→</span></a>
+      <div class="about-grid">
+        <div class="about-heading">
+          <p class="small-heading">WHY WE STARTED</p>
+          <h2>
+            知らないことで、<br>
+            諦めてしまう<br>
+            選択肢をなくしたい。
+          </h2>
+        </div>
+
+        <div class="about-text">
+          <p class="lead">
+            進路を選ぶとき、情報や準備の負担が壁になってしまうことがあります。
+          </p>
+
+          <p>
+            大学受験では、合理的配慮を必要とする受験生が、
+            大学ごとの情報を調べたり、申請に必要な書類を準備したりする必要があります。
+          </p>
+
+          <p>
+            その過程で、何度も同じ情報を整理したり、
+            必要な情報を見つけることに時間がかかったりすることもあります。
+          </p>
+
+          <p>
+            私たちは、こうした課題に向き合い、
+            一人ひとりが自分の進路を考え、選択できる環境づくりを目指しています。
+          </p>
+        </div>
+      </div>
+
+      <div class="about-message">
+        <span>OUR PURPOSE</span>
+        <p>情報の壁をなくし、選べる未来を増やす。</p>
       </div>
     </section>
 
-    <section class="section business" id="business">
+
+    <!-- SERVICE -->
+    <section class="section service" id="service">
       <div class="section-topline">
-        <p class="section-label">02 / BUSINESS</p>
+        <p class="section-label">02 / SERVICE</p>
         <span class="section-index">WHAT WE DO</span>
       </div>
 
-      <h2>受験に必要な情報を、<br>もっとわかりやすく。</h2>
+      <div class="section-heading">
+        <p class="small-heading">OUR APPROACH</p>
+        <h2>
+          受験に必要な情報を、<br>
+          もっとわかりやすく。
+        </h2>
+        <p class="section-intro">
+          私たちは、合理的配慮を必要とする受験生の
+          情報整理や書類準備を支援するアプリを開発しています。
+        </p>
+      </div>
 
-      <p class="section-intro">
-        受験生が自分に合った進路を考えるために。<br>
-        私たちは、情報整理と書類準備の負担を減らす仕組みを考えています。
-      </p>
+      <div class="service-main">
+        <div class="service-main-text">
+          <span class="service-number">SERVICE 01</span>
+          <h3>一度の入力を、<br>必要な準備につなげる。</h3>
+          <p>
+            大学ごとに異なる合理的配慮に関する情報や書類。
+            受験生が何度も同じ情報を整理する負担を減らし、
+            必要な準備を進めやすくする仕組みを目指しています。
+          </p>
+          <span class="status-label">IN DEVELOPMENT / 開発中</span>
+        </div>
 
-      <div class="business-grid">
-        <article class="business-card">
-          <div class="card-icon icon-search">⌕</div>
-          <p class="card-number">01</p>
-          <h3>情報を探しやすく</h3>
+        <div class="service-visual">
+          <div class="mockup">
+            <div class="mockup-top">
+              <span class="mockup-logo">fairyaile.</span>
+              <span class="mockup-menu">● ● ●</span>
+            </div>
+            <div class="mockup-content">
+              <span class="mockup-label">UNIVERSITY SUPPORT</span>
+              <h4>受験準備を、<br>もっとスムーズに。</h4>
+              <div class="mockup-search">大学名を検索する <span>⌕</span></div>
+              <div class="mockup-row">
+                <span>大学情報</span>
+                <strong>確認する →</strong>
+              </div>
+              <div class="mockup-row">
+                <span>入力情報</span>
+                <strong>整理する →</strong>
+              </div>
+              <div class="mockup-row">
+                <span>書類準備</span>
+                <strong>準備する →</strong>
+              </div>
+            </div>
+          </div>
+          <p class="visual-caption">※画面はサービス構想を示すイメージです。</p>
+        </div>
+      </div>
+
+      <div class="feature-grid">
+        <article class="feature-card">
+          <span class="feature-index">01</span>
+          <div class="feature-icon">⌕</div>
+          <h3>大学情報を探す</h3>
           <p>
             大学ごとの合理的配慮に関する情報を、
             必要な人が確認しやすくなる仕組みを目指します。
           </p>
         </article>
 
-        <article class="business-card featured-card">
-          <div class="card-icon icon-document">▤</div>
-          <p class="card-number">02</p>
-          <h3>準備の負担を減らす</h3>
+        <article class="feature-card">
+          <span class="feature-index">02</span>
+          <div class="feature-icon">▤</div>
+          <h3>情報を整理する</h3>
           <p>
-            繰り返し情報を整理する手間を減らし、
-            申請に向けた準備を支援するサービスを開発しています。
+            受験生が入力した情報を整理し、
+            繰り返し記入する負担を減らすことを目指します。
           </p>
-          <span class="development-label">IN DEVELOPMENT</span>
         </article>
 
-        <article class="business-card">
-          <div class="card-icon icon-people">◎</div>
-          <p class="card-number">03</p>
-          <h3>当事者の声を大切に</h3>
+        <article class="feature-card">
+          <span class="feature-index">03</span>
+          <div class="feature-icon">↗</div>
+          <h3>書類準備を支援する</h3>
           <p>
-            実際に必要としている人の声を聞き、
-            現場の課題に合った仕組みづくりにつなげます。
+            必要な書類の準備を進めやすくし、
+            受験生が進路選択に向き合える時間を増やします。
           </p>
         </article>
       </div>
 
-      <p class="business-footnote">
-        ※サービスは現在開発段階です。掲載内容は今後変更される場合があります。
-      </p>
-    </section>
-
-    <section class="message" id="message">
-      <div class="message-inner">
-        <p class="section-label">03 / MESSAGE</p>
-        <p class="message-quote">
-          「仕方ない」で<br>
-          終わらせたくない。
-        </p>
-        <div class="message-text">
-          <p>
-            目の前にある不便や負担は、本当に仕方のないことなのだろうか。
-          </p>
-          <p>
-            私たちは、当たり前だと思われている仕組みに目を向け、
-            そこにある課題を見つけることから始めます。
-            そして、困っている人の声を出発点に、よりよい解決策を考え続けます。
-          </p>
-          <p>
-            一人ひとりの気づきを、社会を変える力へ。
-            それが、fairyaileの大切にしている想いです。
-          </p>
-        </div>
-        <div class="message-decoration">“</div>
-      </div>
-    </section>
-
-    <section class="vision" id="vision">
-      <div class="vision-copy">
-        <p class="section-label">04 / VISION</p>
-        <h2>誰もが、自分の未来を<br>自分で選べる社会へ。</h2>
+      <div class="service-bottom">
         <p>
-          私たちが目指すのは、一つの課題を解決して終わることではありません。
-          情報や環境の違いによって選択肢が狭まらないように、
-          一人ひとりが自分らしい道を選べる社会を目指します。
+          サービスの詳細や機能は、開発の進捗に合わせて順次公開していきます。
         </p>
+        <span>現在開発中</span>
       </div>
+    </section>
 
-      <div class="vision-steps">
-        <div class="vision-step">
-          <span>01</span>
-          <div>
-            <strong>気づく</strong>
-            <p>身近な困りごとを見つける</p>
-          </div>
+
+    <!-- VISION -->
+    <section class="vision" id="vision">
+      <div class="vision-inner">
+        <div class="vision-copy">
+          <p class="section-label">03 / VISION</p>
+          <p class="small-heading">OUR FUTURE</p>
+          <h2>
+            誰もが、自分の未来を<br>
+            自分で選べる社会へ。
+          </h2>
+          <p>
+            私たちが目指すのは、書類準備の負担を減らすことだけではありません。
+            大学や制度による情報の違いに向き合い、
+            誰もが必要な情報にアクセスしやすい環境をつくることです。
+          </p>
         </div>
-        <div class="step-line"></div>
-        <div class="vision-step">
-          <span>02</span>
-          <div>
-            <strong>形にする</strong>
-            <p>声をもとに解決策を考える</p>
-          </div>
-        </div>
-        <div class="step-line"></div>
-        <div class="vision-step">
-          <span>03</span>
-          <div>
-            <strong>社会へ広げる</strong>
-            <p>より多くの人の選択肢につなげる</p>
-          </div>
+
+        <div class="vision-list">
+          <article class="vision-item">
+            <span>01</span>
+            <div>
+              <h3>情報へのアクセスを広げる</h3>
+              <p>必要な情報を見つけやすく、理解しやすく。</p>
+            </div>
+          </article>
+
+          <article class="vision-item">
+            <span>02</span>
+            <div>
+              <h3>準備の負担を減らす</h3>
+              <p>情報整理や書類準備を支える仕組みをつくる。</p>
+            </div>
+          </article>
+
+          <article class="vision-item">
+            <span>03</span>
+            <div>
+              <h3>よりよい仕組みを目指す</h3>
+              <p>将来的には情報の整理や共通化にも取り組む。</p>
+            </div>
+          </article>
         </div>
       </div>
     </section>
 
-    <section class="contact" id="contact">
-      <p class="section-label">05 / CONTACT</p>
-      <h2>一緒に、可能性をひらこう。</h2>
-      <p>
-        私たちの活動に関心を持ってくださった方へ。<br>
-        今後、活動やお問い合わせに関する情報を掲載していきます。
+
+    <!-- ACHIEVEMENTS -->
+    <section class="section achievements" id="achievements">
+      <div class="section-topline">
+        <p class="section-label">04 / ACHIEVEMENTS</p>
+        <span class="section-index">OUR ACTIVITIES</span>
+      </div>
+
+      <h2>挑戦の積み重ねを、<br>次の可能性へ。</h2>
+
+      <p class="section-intro">
+        私たちの活動や挑戦、これまでの取り組みを紹介します。
       </p>
-      <span class="contact-note">CONTACT INFORMATION COMING SOON</span>
+
+      <div class="achievement-grid">
+        <article class="achievement-card">
+          <span class="achievement-category">PROJECT</span>
+          <h3>事業・サービス開発</h3>
+          <p>
+            大学受験における合理的配慮の情報整理や
+            書類準備を支援するアプリを開発しています。
+          </p>
+          <span class="achievement-status">ONGOING</span>
+        </article>
+
+        <article class="achievement-card">
+          <span class="achievement-category">CHALLENGE</span>
+          <h3>コンテスト・発表活動</h3>
+          <p>
+            コンテストへの参加や発表を通じて、
+            事業の可能性を広げています。
+          </p>
+          <span class="achievement-status">UPDATING</span>
+        </article>
+
+        <article class="achievement-card">
+          <span class="achievement-category">COLLABORATION</span>
+          <h3>連携・ヒアリング</h3>
+          <p>
+            大学や団体、さまざまな立場の方々の声を聞き、
+            課題の理解と改善につなげています。
+          </p>
+          <span class="achievement-status">UPDATING</span>
+        </article>
+      </div>
+
+      <p class="section-footnote">
+        ※実績や活動内容は、確認できた情報から順次掲載します。
+      </p>
     </section>
+
+
+    <!-- TEAM -->
+    <section class="section team" id="team">
+      <div class="section-topline">
+        <p class="section-label">05 / TEAM</p>
+        <span class="section-index">WHO WE ARE</span>
+      </div>
+
+      <div class="team-grid">
+        <div>
+          <p class="small-heading">ONE TEAM, MANY PERSPECTIVES</p>
+          <h2>
+            異なる視点を、<br>
+            新しい可能性に。
+          </h2>
+        </div>
+
+        <div class="team-description">
+          <p>
+            私たちは、それぞれの視点や経験を持ち寄り、
+            社会にある課題と向き合っています。
+          </p>
+          <p>
+            一人では気づけないことも、
+            異なる立場の人が集まることで、
+            新しい解決策につながると考えています。
+          </p>
+        </div>
+      </div>
+
+      <div class="team-message">
+        <span>OUR MESSAGE</span>
+        <p>
+          小さな気づきを、社会を変える一歩に。
+        </p>
+        <span class="team-note">
+          メンバー紹介は準備が整い次第、順次公開します。
+        </span>
+      </div>
+    </section>
+
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+      <div class="contact-inner">
+        <p class="section-label">06 / CONTACT</p>
+        <p class="small-heading">LET'S CONNECT</p>
+
+        <h2>
+          一緒に、可能性を<br>
+          ひらきませんか。
+        </h2>
+
+        <p class="contact-description">
+          fairyaileの活動に関心を持ってくださった方、
+          協力・連携をご検討いただける方からのご連絡をお待ちしています。
+        </p>
+
+        <div class="contact-actions">
+          <a class="contact-button" href="mailto:CONTACT_EMAIL">
+            メールでお問い合わせ <span>↗</span>
+          </a>
+        </div>
+
+        <p class="contact-caution">
+          ※メールアドレスは専用アドレスの準備後に公開してください。
+        </p>
+
+        <div class="social-links">
+          <a href="#contact" aria-label="noteへのリンク（準備中）">
+            note <span>↗</span>
+          </a>
+          <a href="#contact" aria-label="Xへのリンク（準備中）">
+            X <span>↗</span>
+          </a>
+        </div>
+        <p class="social-note">SNSアカウントは準備中です。</p>
+      </div>
+    </section>
+
+
+    <!-- COMPANY -->
+    <section class="section company" id="company">
+      <div class="section-topline">
+        <p class="section-label">COMPANY</p>
+        <span class="section-index">BASIC INFORMATION</span>
+      </div>
+
+      <h2>会社概要</h2>
+
+      <div class="company-table">
+        <div class="company-row">
+          <span>名称</span>
+          <strong>fairyaile</strong>
+        </div>
+        <div class="company-row">
+          <span>事業内容</span>
+          <strong>大学受験における合理的配慮の情報整理・書類準備支援</strong>
+        </div>
+        <div class="company-row">
+          <span>代表者</span>
+          <strong>準備中</strong>
+        </div>
+        <div class="company-row">
+          <span>設立年月日</span>
+          <strong>準備中</strong>
+        </div>
+        <div class="company-row">
+          <span>所在地</span>
+          <strong>準備中</strong>
+        </div>
+        <div class="company-row">
+          <span>お問い合わせ</span>
+          <strong>準備中</strong>
+        </div>
+      </div>
+
+      <p class="section-footnote">
+        ※掲載情報は確定した内容に合わせて更新します。
+      </p>
+    </section>
+
   </main>
 
+
+  <!-- FOOTER -->
   <footer class="footer">
-    <a href="#top" class="logo footer-logo">fairyaile<span>.</span></a>
-    <p>可能性を、ひらく。</p>
-    <span class="copyright">© <span id="year"></span> fairyaile</span>
+    <div class="footer-main">
+      <a href="#top" class="logo footer-logo">fairyaile<span>.</span></a>
+      <p>可能性を、ひらく。</p>
+    </div>
+
+    <div class="footer-links">
+      <a href="#about">ABOUT</a>
+      <a href="#service">SERVICE</a>
+      <a href="#vision">VISION</a>
+      <a href="#achievements">ACHIEVEMENTS</a>
+      <a href="#team">TEAM</a>
+      <a href="#company">COMPANY</a>
+      <a href="privacy.html">PRIVACY POLICY</a>
+      <a href="#contact">CONTACT</a>
+    </div>
+
+    <p class="copyright">
+      © <span id="year"></span> fairyaile. All Rights Reserved.
+    </p>
   </footer>
 
   <script src="script.js"></script>
+
 </body>
 </html>
