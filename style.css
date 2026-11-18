@@ -866,6 +866,68 @@ button {
   line-height: 2;
 }
 
+/* CHALLENGES */
+.challenges-section {
+  padding: 100px 8%;
+  background: var(--cream);
+}
+
+.challenges-intro {
+  color: var(--gray);
+  line-height: 2;
+  margin: 25px 0 45px;
+}
+
+.challenge-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.challenge-card {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 35px;
+  transition: 0.3s;
+}
+
+.challenge-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+}
+
+.challenge-status {
+  display: inline-block;
+  color: var(--orange-dark);
+  background: var(--orange-light);
+  padding: 7px 13px;
+  border-radius: 30px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.challenge-card h3 {
+  margin: 22px 0 12px;
+  font-size: 21px;
+}
+
+.challenge-card p {
+  color: var(--gray);
+  line-height: 1.9;
+}
+
+@media (max-width: 768px) {
+  .challenge-list {
+    grid-template-columns: 1fr;
+  }
+
+  .challenges-section {
+    padding: 70px 6%;
+  }
+}
+
 /* TEAM */
 
 .team-section {
